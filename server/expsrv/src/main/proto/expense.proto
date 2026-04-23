@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.expensemargin.grpc.expense";
+option java_outer_classname = "ExpenseProto";
+
+service ExpenseService {
+  rpc GetExpense (GetExpenseRequest) returns (ExpenseResponse);
+  rpc ListUserExpenses (ListUserExpensesRequest) returns (ExpensesResponse);
+  rpc GetExpenseParticipants (GetExpenseParticipantsRequest) returns (ExpenseParticipantsResponse);
+}
+
+message GetExpenseRequest {
+  int64 expenseId = 1;
+}
+
+message ListUserExpensesRequest {
+  string userId = 1;
+}
+
+message GetExpenseParticipantsRequest {
+  int64 expenseId = 1;
+}
+
+message ExpenseResponse {
+  int64 id = 1;
+  string createdByUserId = 2;
+  string title = 3;
+  double totalAmount = 4;
+  string currency = 5;
+  string type = 6;
+  int64 createdAtMillis = 7;
+}
+
+message ExpenseParticipantResponse {
+  int64 id = 1;
+  int64 expenseId = 2;
+  string userId = 3;
+  double amountOwed = 4;
+  double percentage = 5;
+  string status = 6;
+}
+
+message ExpensesResponse {
+  repeated ExpenseResponse expenses = 1;
+}
+
+message ExpenseParticipantsResponse {
+  repeated ExpenseParticipantResponse participants = 1;
+}
