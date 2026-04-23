@@ -28,33 +28,26 @@ The frontend talks to the backend through the gateway, which routes requests to 
 
 ## Screenshots
 
-<table>
-	<tr>
-		<td align="center" width="50%">
-			<strong>Dashboard</strong><br />
-			<img src="imgs/dashboard.jpeg" alt="Dashboard" width="360" />
-		</td>
-		<td align="center" width="50%">
-			<strong>Expense List</strong><br />
-			<img src="imgs/expenses.jpeg" alt="Expense List" width="360" />
-		</td>
-	</tr>
-	<tr>
-		<td align="center" width="50%">
-			<strong>Create Expense</strong><br />
-			<img src="imgs/exp_form.jpeg" alt="Create Expense" width="360" />
-		</td>
-		<td align="center" width="50%">
-			<strong>Expense Detail</strong><br />
-			<img src="imgs/one_exp.jpeg" alt="Expense Detail" width="360" />
-		</td>
-	</tr>
-	<tr>
-		<td align="center" width="50%">
-			<strong>Settlement</strong><br />
-			<img src="imgs/settlement.jpeg" alt="Settlement" width="360" />
-		</td>
-		<td width="50%"></td>
-	</tr>
-</table>
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+	<div style="flex: 1 1 320px; text-align: center;">
+		<strong>Dashboard</strong><br />
+		<img src="imgs/dashboard.jpeg" alt="Dashboard" width="360" />
+	</div>
+	<div style="flex: 1 1 320px; text-align: center;">
+		<strong>Expense List</strong><br />
+		<img src="imgs/expenses.jpeg" alt="Expense List" width="360" />
+	</div>
+	<div style="flex: 1 1 320px; text-align: center;">
+		<strong>Create Expense</strong><br />
+		<img src="imgs/exp_form.jpeg" alt="Create Expense" width="360" />
+	</div>
+	<div style="flex: 1 1 320px; text-align: center;">
+		<strong>Expense Detail</strong><br />
+		<img src="imgs/one_exp.jpeg" alt="Expense Detail" width="360" />
+	</div>
+	<div style="flex: 1 1 320px; text-align: center;">
+		<strong>Settlement</strong><br />
+		<img src="imgs/settlement.jpeg" alt="Settlement" width="360" />
+	</div>
+</div>
 
